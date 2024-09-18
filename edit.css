@@ -1,0 +1,134 @@
+.product{
+    max-width: calc(15% - 20px);
+}
+.ProductNames{
+    display: flex;
+    justify-content: space-between;
+}
+.ProductNames h3, .ProductNames h1{
+    display: flex;
+    margin: auto 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.deleteProdcut{
+    background-color: #e7420f;
+
+}
+.deleteProdcut:hover{
+    background-color: #ff4006;
+
+}
+.loader-container{  
+    height: 100%;
+    width: 100%;
+    margin: 2% 0 0 0 ;
+    display: none;
+    
+}
+
+.addBtn a div {
+    
+    width: 100%;
+    margin: auto 0;
+}
+.addBtn a img{
+    width: 60%;
+    height:30%;
+
+    margin: auto;
+    margin-top: 40% ;
+}
+
+.loader{
+    
+    margin: auto;
+    border:7px solid white;
+    border-top:7px solid green;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 950px) {
+    .product {
+        flex: 0 0 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .product {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .product {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+    .products {
+        gap: 10px;
+        
+    }
+    .modal-content {
+        width: 100%; 
+        height: auto;
+        margin: auto 0;
+
+    }
+    .modal{
+        padding: 50% 0;
+        
+        
+    }
+    .tab-link {
+        background-color: #a9e569;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 15px 0%;
+        width: 30%;
+        margin: 0;
+        
+
+
+        font-size: 16px;
+        flex: auto;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+    }
+    .addBtn a img{
+        width: 60%;
+        height:35%;
+
+        margin: auto;
+        margin-top: 20% ;
+    }
+}

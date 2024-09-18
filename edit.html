@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/product.css" />
+        <link rel="stylesheet" type="text/css" href="/index.css" />
+        <link rel="stylesheet" type="text/css" href="/edit.css" />
+
+
+        
+        <script src="edit.js" type="module"></script> 
+        <script src="firebase.js" type="module"></script> 
+
+        
+        <title>Edit mode</title>
+
+    </head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a  href="">
+                <img src="/amuLogo.png" alt="Company Logo">
+                
+            </a>
+        </div>
+
+        <div>
+            <a class="btn" href="./index.html">
+                Go back
+            </a>
+        </div>
+    </header>
+    
+    <div class="max-width">
+
+        <div id="addproductDetailsModal"  class="modal">
+            <div class="modal-content" >
+                <span class="close" id="closeAddproductDetailsModal">&times;</span>
+                <h2>Add New Product</h2>
+                <div class="orderDetails" id="orderDetails">
+                    <form id="addProductForm">
+                        
+                        <input type="text" id="newProductName" placeholder="Product Name" required>
+                        <input type="number" id="newProductNumsPerbox" placeholder="Per box number">
+
+                        <input type="file" id="imageInput" accept="image/*">
+                        <button id="addSubmitBtn" type="submit">Add Product</button>
+                        <div id="loader-container" class="loader-container">
+                            <div class="loader"></div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="changeProductDetailsModal"  class="modal">
+            <div class="modal-content" >
+                <span class="close" id="closeChangeproductDetailsModal">&times;</span>
+                <h2>Change Product</h2>
+                <div class="orderDetails" id="orderDetails">
+                    <form id="ChangeProductForm">
+                        
+                        <input type="text" id="ChangedProductName" placeholder="Product Name" required>
+                        <input type="number" id="ChangedProductNumsPerbox" placeholder="Per box number">
+
+                        <button id="deleteProdcutConfirmation" class="deleteProdcut">Delete Products</button>
+                        <button type="submit">Change Product</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="confirmDeleteModal"  class="modal">
+            <div class="modal-content" >
+                <span class="close" id="closeConfirmDeleteModal">&times;</span>
+                <h2>Conformation</h2>
+                <div class="orderDetails" id="orderDetails">
+                    
+                        
+                        <h1>Are you sure you want to delete this Prodcut?</h1>
+
+                        <button id="deleteProdcut" class="deleteProdcut">Delete Products</button>
+                        
+                        
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-container" id="tab-container">
+            <div class="tabs" id="tabs">
+                
+            </div>
+ 
+        </div>
+
+    </div>
+    
+
+    
+
+</body>
+</html>
